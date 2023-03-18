@@ -34,6 +34,12 @@ body {
     justify-content: space-between;
 }
 
+@media screen and (min-width: 768px) {
+    .main-header {
+        margin: 25px;
+    }
+}
+
 @media screen and (max-width: 768px) {
 
     .main-header-inner {
@@ -47,9 +53,8 @@ body {
     .icon {
         display: block;
         position: absolute;
-        right: 0;
-        top: 0;
-        align-self: right;
+        right: 5px;
+        top: 5px;
     }
 
     .main-nav-list .list-item {
@@ -64,6 +69,10 @@ body {
 
     .main-nav-list.responsive .item-link {
         text-align: center
+    }
+
+    .main-header {
+        margin: 10px;
     }
 
 }
