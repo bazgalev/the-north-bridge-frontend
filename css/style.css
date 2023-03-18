@@ -1,82 +1,80 @@
-body{
+body {
     margin: 0;
     padding: 0;
 
-    font-family: Niramit,sans-serif;
-    background-color: whitesmoke;
+    font-family: Niramit, sans-serif;
 }
 
-.main-header{
-    /* height: 60px; */
+.main-header {
     background: white;
     box-sizing: border-box;
-    /* border-bottom: 1px solid #fff44f; */
-
     font-size: 16px;
+    margin-bottom: 25px;
 }
 
-.main-header-inner{
+.main-header-inner {
     box-sizing: border-box;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 25px;
 }
 
-.icon{
+.icon {
     display: none;
-    font-size:26px;
+    font-size: 26px;
     line-height: 26px;
     padding: 16px 13px;
     text-decoration: none;
     color: black;
     box-sizing: border-box;
 }
-.header-content{
+
+.header-content {
     display: flex;
     justify-content: space-between;
 }
 
-@media screen and (max-width: 768px){
-    
-    .main-header-inner{
+@media screen and (max-width: 768px) {
+
+    .main-header-inner {
         padding: 0;
     }
 
-    .header-content{
+    .header-content {
         flex-direction: column;
     }
 
-    .icon{
+    .icon {
         display: block;
         position: absolute;
         right: 0;
         top: 0;
         align-self: right;
     }
-    
-    .main-nav-list .list-item{
+
+    .main-nav-list .list-item {
         display: none;
     }
-    .main-nav-list.responsive .list-item{
+
+    .main-nav-list.responsive .list-item {
         display: block;
         width: 100%;
         transition: 2s;
     }
 
-    .main-nav-list.responsive .item-link{
+    .main-nav-list.responsive .item-link {
         text-align: center
     }
 
 }
 
 
-
-.main-logo{
+.main-logo {
     display: block;
     height: 60px;
 }
 
-.main-nav-list{
+.main-nav-list {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -84,117 +82,133 @@ body{
     flex-wrap: wrap;
 }
 
-.item-link{
+.item-link {
     display: block;
     height: 60px;
     text-decoration: none;
-    color:black;
+    color: black;
     box-sizing: border-box;
     line-height: 36px;
     padding: 12px 10px;
 }
 
-.item-link:hover{
+.item-link:hover {
     box-sizing: border-box;
     border-bottom: 3px solid red;
     /* transition: 300ms; */
 }
 
 
-.active{
+.active {
     font-weight: bold;
 }
 
 
-
-
-.main-content-inner{
+.main-content-inner {
     box-sizing: border-box;
     max-width: 1200px;
     margin: 15px auto;
     padding: 0 15px;
 
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 }
 
 @media screen and (max-width: 768px) {
-    .main-content-inner{
+    .main-content-inner {
         padding: 0;
     }
 }
 
-.article{
+.article {
     box-sizing: border-box;
     /* border: 1px solid green; */
-
-    margin-top: 10px;
     flex-basis: 370px;
-    flex-grow:1;
-    margin:10px;
+    flex-grow: 1;
+    margin: 10px;
     background-color: #fff;
 }
 
-.article-image{
+.article-image {
     width: 100%;
 }
 
-.article-image-link{
+.article-image-link {
     display: block;
-    font-size:0;
+    font-size: 0;
 }
 
-.article-preview{
+.article-preview {
     padding: 20px;
 }
-.article-heading{
+
+.article-heading {
     padding: 0;
     margin: 0;
 }
-.article-link{
+
+.article-link {
     /* text-decoration: none; */
     color: black;
 }
-.article-text{
+
+.article-text {
     display: inline;
 }
 
-.article-link:hover{
+.article-link:hover {
     color: red;
     transition: 60ms;
 }
 
-.time-container{
+.main-nav-list .item-link {
+    text-transform: uppercase;
+}
+
+.release .article-heading {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.release .artist-name {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.time-container {
     display: flex;
     justify-content: flex-end;
 }
-.article-time{
+
+.article-time {
     font-size: 14px;
     /* display: inline; */
     text-align: right;
     opacity: 0.6;
 }
 
-.main-footer-inner{
+.main-footer-inner {
     box-sizing: border-box;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 25px;
 }
 
-.main-footer{
-    height:80px;
+.main-footer {
+    height: 80px;
     background-color: #fff;
 
     margin-top: 10px;
 }
 
-.footer-content{
+.footer-content {
     display: flex;
     justify-content: center;
 }
 
-.footer-text{
+.footer-text {
     box-sizing: border-box;
     margin: 0;
     padding: 32px 0;
