@@ -1,3 +1,33 @@
+@media screen and (min-width: 768px) {
+    .main-header {
+        margin: 25px;
+    }
+
+    .main-content-inner {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0 15px;
+    }
+
+    .main-header-inner {
+        padding: 0 25px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-header-inner {
+        padding: 0;
+    }
+
+    .main-header {
+        margin: 10px;
+    }
+
+    .main-content-inner {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0;
+    }
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -15,68 +45,14 @@ body {
 .main-header-inner {
     box-sizing: border-box;
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 25px;
-}
-
-.icon {
-    display: none;
-    font-size: 26px;
-    line-height: 26px;
-    padding: 16px 13px;
-    text-decoration: none;
-    color: black;
-    box-sizing: border-box;
+    margin: 15px auto;
+    display: grid;
 }
 
 .header-content {
     display: flex;
     justify-content: space-between;
 }
-
-@media screen and (min-width: 768px) {
-    .main-header {
-        margin: 25px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-
-    .main-header-inner {
-        padding: 0;
-    }
-
-    .header-content {
-        flex-direction: column;
-    }
-
-    .icon {
-        display: block;
-        position: absolute;
-        right: 5px;
-        top: 5px;
-    }
-
-    .main-nav-list .list-item {
-        display: none;
-    }
-
-    .main-nav-list.responsive .list-item {
-        display: block;
-        width: 100%;
-        transition: 2s;
-    }
-
-    .main-nav-list.responsive .item-link {
-        text-align: center
-    }
-
-    .main-header {
-        margin: 10px;
-    }
-
-}
-
 
 .main-logo {
     display: block;
@@ -98,13 +74,12 @@ body {
     color: black;
     box-sizing: border-box;
     line-height: 36px;
-    padding: 12px 10px;
+    padding: 12px 15px;
 }
 
 .item-link:hover {
     box-sizing: border-box;
     border-bottom: 3px solid red;
-    /* transition: 300ms; */
 }
 
 .active {
@@ -115,16 +90,9 @@ body {
     box-sizing: border-box;
     max-width: 1200px;
     margin: 15px auto;
-    padding: 0 15px;
 
-    display: flex;
-    flex-wrap: wrap;
-}
 
-@media screen and (max-width: 768px) {
-    .main-content-inner {
-        padding: 0;
-    }
+    display: grid;
 }
 
 .article {
@@ -190,7 +158,6 @@ body {
 
 .article-time {
     font-size: 14px;
-    /* display: inline; */
     text-align: right;
     opacity: 0.6;
 }
@@ -199,14 +166,11 @@ body {
     box-sizing: border-box;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 25px;
 }
 
 .main-footer {
-    height: 80px;
+    height: 60px;
     background-color: #fff;
-
-    margin-top: 10px;
 }
 
 .footer-content {
@@ -217,8 +181,6 @@ body {
 .footer-text {
     box-sizing: border-box;
     margin: 0;
-    padding: 32px 0;
-    height: 80px;
     line-height: 16px;
     color: black;
 }
